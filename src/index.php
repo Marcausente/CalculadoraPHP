@@ -1,4 +1,25 @@
 <?php
+    $num1 = 0;
+    $num2 = 0;
+    $result = 0;
+
+if (isset($_POST['num1']) && isset($_POST['num2'])) {
+    $num1 = (int)$_POST['num1'];
+    $num2 = (int)$_POST['num2'];
+}
+
+
+if(isset($_POST['suma'])){
+        $result = caluclarSuma($num1, $num2);
+        echo "El resultado de la suma es: ".$result;
+    }
+
+function caluclarSuma($num1, $num2)
+{
+    $result = $num1 + $num2;
+    return $result;
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -9,7 +30,15 @@
   <title>Document</title>
 </head>
 <body>
-<form method="get" action="">
+<form method="post" action="">
+    <br>
+    <label>Numero 1: </label>
+    <input type="number" name="num1">
+    <br>
+    <label>Numero 2: </label>
+    <input type="number" name="num2">
+    <br>
+    <br>
     <input type="submit" name="suma" value="Sumar" />
     <input type="submit" name="resta" value="Restar" />
     <input type="submit" name="dividir" value="Multiplicar" />
