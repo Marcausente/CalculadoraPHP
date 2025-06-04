@@ -10,10 +10,11 @@
 </head>
 <body>
 <form method="get" action="">
-    <input type="submit" name="promedio" value="Promedio" />
-    <input type="submit" name="minimo" value="Mínimo" />
-    <input type="submit" name="maximo" value="Máximo" />
-    <input type="submit" name="generar" value="Re-Generar Notas" />
+    <input type="submit" name="suma" value="Sumar" />
+    <input type="submit" name="resta" value="Restar" />
+    <input type="submit" name="dividir" value="Multiplicar" />
+    <input type="submit" name="multiplicar" value="Dividir" />
+    <input type="submit" name="potencia" value="Potencia" />
 </form>
 </body>
 </html>
