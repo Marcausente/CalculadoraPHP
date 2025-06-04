@@ -19,9 +19,26 @@ if(isset($_POST['resta'])){
     echo "El resultado de la resta es: ".$result;
 }
 
+if(isset($_POST['multiplicacion'])){
+    $result = calcularMultiplicacion($num1, $num2);
+    echo "El resultado de la multiplicacion es: ".$result;
+}
+
+
+if(isset($_POST['division'])){
+    $result = calcularDivision($num1, $num2);
+    echo "El resultado de la division es: ".$result;
+}
+
 function calcularResta($num1, $num2)
 {
     $result = $num1 - $num2;
+    return $result;
+}
+
+function calcularDivision($num1, $num2)
+{
+    $result = $num1 / $num2;
     return $result;
 }
 
@@ -30,6 +47,14 @@ function caluclarSuma($num1, $num2)
     $result = $num1 + $num2;
     return $result;
 }
+
+function calcularMultiplicacion($num1, $num2)
+{
+    $result = $num1 * $num2;
+    return $result;
+
+}
+
 
 
 ?>
