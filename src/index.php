@@ -14,6 +14,17 @@ if(isset($_POST['suma'])){
         echo "El resultado de la suma es: ".$result;
     }
 
+if(isset($_POST['resta'])){
+    $result = calcularResta($num1, $num2);
+    echo "El resultado de la resta es: ".$result;
+}
+
+function calcularResta($num1, $num2)
+{
+    $result = $num1 - $num2;
+    return $result;
+}
+
 function caluclarSuma($num1, $num2)
 {
     $result = $num1 + $num2;
