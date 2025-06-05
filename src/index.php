@@ -30,6 +30,16 @@ if(isset($_POST['division'])){
     echo "El resultado de la division es: ".$result;
 }
 
+if(isset($_POST['potencia'])){
+    $result = calcularPotencia($num1, $num2);
+}
+
+function calcularPotencia($num1, $num2)
+{
+    $result = pow($num1, $num2);
+    return $result;
+}
+
 function calcularResta($num1, $num2)
 {
     $result = $num1 - $num2;
