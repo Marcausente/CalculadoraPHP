@@ -21,10 +21,10 @@ if (isset($_POST['multiplicacion'])) {
 }
 
 if (isset($_POST['division'])) {
-    if ($num2 != 0) {
-        $result = "El resultado de la división es: " . calcularDivision($num1, $num2);
-    } else {
+    if ($num2 = 0) {
         $result = "Error: No se puede dividir por cero.";
+    } else {
+        $result = "El resultado de la división es: " . calcularDivision($num1, $num2);
     }
 }
 
